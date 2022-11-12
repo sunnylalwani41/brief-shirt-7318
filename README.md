@@ -28,10 +28,10 @@ Within 5 days and this is our first project during the Masai curriculum
 
 # Screenshots
 ## Landing Page
-<img src="WebsiteScreenShot/">
+<img src="WebsiteScreenShot/landing page.PNG">
 
-## Product Page
-<img src="WebsiteScreenShot/Trip Advisor_Menu.PNG" border="5px solid black">
+## Internal Page
+<img src="WebsiteScreenShot/MoR.PNG" border="5px solid black">
 
-## Basket Page
-<img src="WebsiteScreenShot/Trip Advisor_Basket.PNG" border="5px solid black" margin-top="2px">
+## Login Page
+<img src="WebsiteScreenShot/Login.PNG" border="5px solid black" margin-top="2px">
