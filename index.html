@@ -7,39 +7,1243 @@
     <title>Sabke Liye Job</title>
     <link rel="icon" href="./img/Sabke liye job.png">
     <link rel="stylesheet" href="./StyleSheet/index.css">
+    <link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/base.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/font.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/font-awesome.min.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/flexslider.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/print.css" rel="stylesheet" media="print">
+    <!-- Theme styles for this template -->
+    <link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/bootstrap.min.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/site.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/site-responsive.css" rel="stylesheet" media="all"><link type="text/css" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/animate.css" rel="stylesheet" media="all"><link type="text/css" rel="stylesheet" href="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/linear-icon-style.css">
+    
+    <style>
+        .success-story {
+            animation: blink 1s linear infinite;
+        }
+
+        @keyframes blink {
+            33% {
+                opacity: .33;
+            }
+
+            66% {
+                opacity: .66;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+        /*marquee style*/
+        h6.marquee {
+            -moz-animation: marquee 30s linear infinite;
+            -webkit-animation: marquee 30s linear infinite;
+            animation: marquee 30s linear infinite;
+            white-space: nowrap;
+            color: whitesmoke;
+            font-size: 12px;
+        }
+
+            h6.marquee a {
+                color: yellow
+            }
+            .marque-sec {
+                min-height: inherit;
+                padding-top:0;
+            }
+        @-moz-keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @-webkit-keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes marquee {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%)
+            }
+
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+        /*Covid-19 Messages*/
+        .man img {
+            height: fit-content;
+            max-height: 25vh;
+        }
+
+        .duringwork {
+            padding: 1rem;
+        }
+
+            .duringwork h3, .duringwork li {
+                color: white;
+            }
+
+            .duringwork a {
+                color: #e87b05;
+            }
+
+                .duringwork a:hover {
+                    text-decoration: underline;
+                }
+        /*carousel Inner style*/
+        .carousel-caption {
+            background: rgba(0,0,0,.8);
+            width: 100%;
+            margin: auto;
+            left: 0;
+            padding: .75rem;
+        }
+
+        .truncate {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /*Footer style*/
+        .page-footer a {
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+            .page-footer a:hover {
+                color: #e87b05;
+                text-decoration: underline;
+            }
+
+        .text-light-secondary {
+            color: #e2e3e5;
+        }
+
+        .bg-gray-800 {
+            color: #ffffff;
+            background: #343a40;
+        }
+
+        .bg-gray-900 {
+            color: #ffffff;
+            background: #212529;
+        }
+
+        .text-center {
+            text-align: center !important;
+        }
+
+        .text-white {
+            color: #ffffff;
+        }
+
+        .text-white-50 {
+            color: whitesmoke;
+        }
+
+        .py-1 {
+            padding-top: 0.25rem !important;
+            padding-bottom: 0.25rem !important;
+        }
+
+        .my-1 {
+            margin-top: 0.25rem !important;
+            margin-bottom: 0.25rem !important;
+        }
+
+        .mb-0 {
+            margin-bottom: 0;
+        }
+
+        .me-1 {
+            margin-right: 0.25rem !important;
+        }
+
+        .d-flex {
+            display: flex !important;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .justify-content-between {
+            justify-content: space-between !important;
+        }
+
+        .justify-content-start {
+            justify-content: flex-start !important;
+        }
+
+        .justify-content-end {
+            justify-content: flex-end !important;
+        }
+
+        .bottom-quick li a {
+            border-right: 1px solid silver;
+            padding-right: 13px;
+        }
+
+        .bottom-quick li:last-child a {
+            border-right: 0px solid silver;
+            padding-right: 0;
+        }
+        /*New Quick Connect style*/
+        .quick-connect {
+            width: 100%;
+            min-height: inherit;
+            background: transparent;
+            padding: 1em 0;
+        }
+
+            .quick-connect .circle-list .circle {
+                width: 200px;
+                height: 100px;
+                border-radius: 16px;
+                display: table;
+                padding: 0.5em;
+                overflow: hidden;
+            }
+
+                .quick-connect .circle-list .circle .circle-cont:hover h3 {
+                    margin-top: -14px;
+                }
+
+        .whats-new .vert-scroll-container .vert-scroll li:last-child {
+            border-bottom: none;
+        }
+
+        .whats-new .vert-scroll-container .vert-scroll li {
+            padding-left: 1em;
+            /*padding: 5px auto;*/
+        }
+
+            .whats-new .vert-scroll-container .vert-scroll li > a {
+                color: #292a2a;
+                display: inline-block;
+                line-height: 1.5;
+            }
+
+        .modal-footer {
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+            
+        @media (min-width: 992px) {
+        .modal-lg {
+            width: 1280px;
+        }
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    </style>
 </head>
 <body>
+    <nav class="h-nav" style="display: flex;">
+        <div class="left1 h-nav">
+            <div class="burger ">
+                <p class="capital white">Menu</p>
+                <div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        
+            <div class="menu visibility">
+                <div class="sec1">
+                    <ul>
+                        <li class="menu-head">About Us</li>
+                        <li>> About the Ministry</li>
+                        <li class="menu-head">Demo Login</li>
+                        <li>> Demo Site Block</li>
+                        <li>> Demo Site Panchayat</li>
+                        <li class="menu-head">MoRD</li>
+                        <a href="./MoRD.html"><li>> MoRD</li></a>
+                    </ul>
+                </div>
+                <div class="sec1">
+                    <ul>
+                        <li class="menu-head">Modules</li>
+                        <li>> KIOSK</li>
+                        <li>> CSO</li>
+                        <li>> SDG Dashboard</li>
+                    </ul>
+                </div>
+                <div class="sec1">
+                    <ul>
+                        <li class="menu-head">Downloads</li>
+                        <li>> Geomgnrega SOP English</li>
+                        <li>> Hindi</li>
+                        <li>> Geomgnrega FAQ English</li>
+                        <li>> Hindi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right1">
+            <input type="text" placeholder="Search">
+            <button class="btn1">Search</button>
+            <div class="btn2">
+                <p>Site_Map</p>
+                <p>Screen_Reader_Access</p>
+                <p>Download_Mobile_App</p>
+                <p>Data_Entry</p>
+            </div>
+            <a href="#spik"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzQzYdUeoTdavo0IE1aAkCPFm7LZ6pf_KYQA&usqp=CAU" alt=""></a>
+            <a href="https://www.facebook.com/iecmgnrega/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe1gFRYhdXhXlXZbbuNEw7YWPKdJVFZKRMWg&usqp=CAU" alt=""></a>
+            <p>A <sup>-</sup></p>
+            <p>A </p>
+            <p>A <sup>+</sup></p>
+            <p style="background-color: black; color: white;">A</p>
+            <select >
+                <option>English</option>
+                <option>Hindi</option>
+            </select>
+        </div>
+    </nav>
+    
     <div id="navbar">
         <div class="headerImage">
             <img src="./img/Ashok Symbol.png" alt="">
             <img src="./img/Sabke liye job.png" alt="">
             <div class="headerUpperCaseFont">
-                <h2>The Mahatma Gandhi National</h2>
-                <h2>Rural Employment Guarantee Act 2005</h2>
+                <h2 class="capital">The Mahatma Gandhi National</h2>
+                <h2 class="capital">Rural Employment Guarantee Act 2005</h2>
                 <p>Ministry Of Rural Development, Government Of India</p>
             </div>
         </div>
         <div class="headerImage2">
-            <img src="./img/Search Icon.png" alt="">
-            <img src="./img/app-download-icon-13.jpg" alt="">
+            <a href="#"><img src="img/flag.gif" alt=""></a>
+            <a href="#"><img src="./img/Search Icon.png" alt=""></a>
         </div>
     </div>
     <div class="movingImage">
         <div class="arrow left"><</div>
-        <img src="./img/4.jpg" alt="">
-        <img src="./img/3.jpg" alt="">
-        <img src="./img/2.jpg" alt="">
         <img src="./img/1.jpg" alt="">
         <div class="arrow right">></div>
     </div>    
-    <div class="grid6">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <div class="grid6" id="spik">
+        <div>
+            <img src="./img/job.png" alt="">
+            <p>15.5 Cr.</p>
+            <p class="capital">Active Workers</p>
+            <p>2022-23</p>
+            <div>Details.</div>
+        </div>
+        <div>
+            <img src="./img/openbox-icon.png" alt="">
+            <p>6.88 Cr.</p>
+            <p class="capital">Assets created Till Date</p>
+            <div>Details.</div>
+        </div>
+        <div>
+            <img src="./img/manhalf-icon.png" alt="">
+            <p>188.11 Cr.</p>
+            <p class="capital">Person Days Generated</p>
+            <p>2022-23</p>
+            <div>Details.</div>
+        </div>
+        <div>
+            <img src="./img/handrupees-icon.png" alt="">
+            <p>28.72 Cr.</p>
+            <p class="capital">DBT Transactions</p>
+            <p>2022-23</p>
+            <div>Details.</div>
+        </div>
+        <div>
+            <img src="./img/twohome-icon.png" alt="">
+            <p>5.12 Cr.</p>
+            <p class="capital">HouseHolds Benefitted</p>
+            <p>2022-23</p>
+            <div>Details.</div>
+        </div>
+        <div>
+            <img src="./img/barchart-icon.png" alt="">
+            <p>2.08 Cr.</p>
+            <p class="capital">Individual Category Works</p>
+            <p>2022-23</p>
+            <div>Details.</div>
+        </div>
     </div>
+    <form method="post" action="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx" id="form1" style="overflow: inherit;">
+        <div class="aspNetHidden">
+        <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ykjwV9raxdl8XkThrJH5I/qsfWRwCfD1fOte1F4DSShXEjmWbXctZRh+lfRx56lwYft5DcB457Z52X52PIx1+MQ2Ci6n7dyBP5Zr6KBtDxdDhwmOnWESj82AHwE/PP72t+fZcsBTx1A2hJq2d/9O/6HxVTN+pUAQFeT3mbwjdt/gbr/8t1ska/AskPcVdZ18RaSCJqw0m+5JqzoD0OiwZmquaM5Fbbv1SMYECiLTanp1XF1lIUPTO8DLvL3l9EtUP9+qXRVAv9TmretG/95TPsnp1N0Ww4OOLDJAzwwB4MLeBTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHtXNLEAA1Sv4xehmwvQHA6m5w759o5UCxu5N3vZ73JKYVFxhm72OpTvqV2RERGowUZl/ywjto+qXoEoXri3Wn9KegFYGyG85QkYiN5pNbfrG7+nNU5YF1h+XMzlbELHH7kcZswPEAjVGIgZ7uwSgfujrqwAwm44i9FQeCeMKv9ffW7Lq9DZEGlBHb4dTez6uqe2HRQmE81/eIV/JBVce6NEMkrqxK9JwpyOWCV+qNVgte3kumutkCWX62NsW0RXehptXk3eoUuisRuH3rnclKv92CAUc16d5ty6WlKi1i06m4Xm3vyKCkSDaJi1kIa+otXHpK3bMRoWHIGbSQcw+o+NYkgzj24vVhV74l4DVj+cuzZfGNQvcEGY/XB+BYpPQrcvnDSlfrubuP0XOVQSfsZgzt6GiztzBhV2ZfffgvyWSUPTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHW7h4v0q92lKYZSgdQjG51hwT9fnz4+I182LhyQfv7R9oPjC8xIB84qaN3BdcTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHGd7COet/tAAqDJiaQTppffvu3h9Z+dSkkX5738PJZ+7m3hSTPT0s9vzr1wmA9/q2M9tsrzfAVQ==">
+        </div>
+        
+        <div class="aspNetHidden">
+        
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="1A041602">
+            <input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+        </div>
+                
+                <div class="wrapper common-wrapper">
+                    <div class="hp-circle-sec paralaxbg">
+                        <div class="container-fluid">
+                            <div class="circle-list">
+                                <ul class="quicksec">
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx?Fin_Year=2022-2023&amp;Digest=ftWywJ4W7YWkLDX82gF7Mw" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="At a Glance">
+                                                    <h3>At a Glance</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                
+                                                
+                                                <a href="https://e-saksham.nic.in/" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Saksham">
+                                                    <h3>e-Saksham</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                   
+                                     <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://mnregaweb4.nic.in/jaldootweb/Home.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Jal Doot">
+                                                    <h3>Jal Doot</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="http://mnregaweb4.nic.in/netnrega/MISreport4.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Reports for MIS">
+                                                    <h3>Reports</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nrega.nic.in/netnrega/SocialAuditFindings/SA_home.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Social_Audit">
+                                                    <h3>Social Audit</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://dashboard.rural.nic.in/areaofficerwebnew/login.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Area Officer Visit">
+                                                    <h3>Area Officer Visit</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle success-story" style="background-color: deepskyblue; border: dotted 3px white;">
+                                            <div class="circle-cont">
+                                                <a href="https://nrega.nic.in/Nregahome/JalShakti/MGNrega_water_conservation.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/water-cons-icon.png" alt="Success Story">
+                                                    <h3>Water Conservation Stories</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://water.ncog.gov.in/AmritSarovar/login" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Amrit Sarovar Mission">
+                                                    <h3>Amrit Sarovar Mission</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://bhuvan-app2.nrsc.gov.in/planner/plannerhome.php" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Yuktdhara Portal">
+                                                    <h3>Yuktdhara Portal</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row man" style="background: #015392;">
+                        <div class="col-md-5 col-lg-6">
+                            <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/banner-sm-2.jpg" alt="banner-sm" class="img-responsive" draggable="false"></div>
+                        <div class="col-md-4 col-lg-3">
+                            <div class="duringwork">
+                                <h3 class="h3">काम के दौरान पंच सूत्र का ध्यान</h3>
+                                <ul>
+                                    <li>
+                                        <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/new.gif" alt="new" style="width: 30px;" draggable="false">
+                                        Animated AV ( <a href="https://youtu.be/lrVFDRGvt_A" target="_blank">Hindi</a> / <a href="https://youtu.be/j4-GAO7ZYAg" target="_blank">English</a> ) <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 18px;"></i></li>
+                                    <li>
+                                        <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/new.gif" alt="new" style="width: 30px;" draggable="false">
+                                        Message Video ( <a href="https://youtu.be/8KiRI4fd-Hw" target="_blank">View here</a> ) <i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 18px;"></i></li>
+                                    <li>
+                                        <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/new.gif" alt="new" style="width: 30px;" draggable="false">
+                                        Printable Poster ( <a href="https://rural.nic.in/sites/default/files/MoRD_Informative%20Poster%20for%20Workers_HR.pdf" target="_blank">Hindi</a> / <a href="https://rural.nic.in/sites/default/files/MoRD%205%20Sutra%20English%20Poster.pdf" target="_blank">English</a> ) <i class="fa fa-print" aria-hidden="true" style="font-size: 18px;"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#covid19Modal">
+                            <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/banner-sm-covid.jpg" alt="banner_cov" class="img-responsive" style="width: 100%" draggable="false"></a></div>
+                    </div>
+                    <div class="modal fade" id="covid19Modal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" style="font-size: 32px; line-height: 1; position: absolute; top: 0px; right: 10px;">×</span></button>
+                                </div>
+                                <div class="modal-bo dy">
+                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                                            <li data-target="#myCarousel" data-slide-to="5"></li>
+                                            <li data-target="#myCarousel" data-slide-to="6"></li>
+                                            
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img01.png" alt="Wear Mask" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Wear Mask</h3>
+                                                    <p class="truncate">#COVID19 से बचाव के लिए ज़रूरी है - मास्क अपनाना और दो गज दूरी अपनाना।</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img02.png" alt="Wear Mask" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Wear Mask</h3>
+                                                    <p class="truncate">दो गज दूरी, मास्क ज़रूरी</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img03.png" alt="Wear Mask Properly" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Wear Mask Properly</h3>
+                                                    <p class="truncate">#COVID19 के संक्रमण को रोकने के लिए मास्क या घर पर बना फेस कवर ज़रूर पहनें। ध्यान रहे, नाक और मुँह अच्छी तरह ढके रहें</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img04.png" alt="Maintain Social Distance" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Maintain Social Distance</h3>
+                                                    <p class="truncate">#COVID19 के संक्रमण से बचने के लिए हमेशा दूसरों से 2 गज की दूरी बना कर रखें।</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img05.png" alt="Maintain Social Distance" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Maintain Social Distance</h3>
+                                                    <p class="truncate">जब भी बाहर जाएँ - मास्क पहनें और दो गज दूरी रखें।</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img06.png" alt="Maintain Social Distance" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Maintain Social Distance</h3>
+                                                    <p class="truncate">याद रखें, कोरोना को मात देने के लिए अपने हाथ समय-समय पर धोते रहें।</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/covid-img07.png" alt="Maintain Social Distance" style="width: 100%;">
+                                                <div class="carousel-caption">
+                                                    <h3 class="truncate">Follow COVID Precautions – Maintain Social Distance</h3>
+                                                    <p class="truncate">COVID 19 से बचाव के लिए ज़रूरी है कि आप अपने हाथ नियमित रूप से साबुन और पानी से अच्छी तरह साफ़ करें</p>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <!-- Left and right controls -->
+                                        <a class="left carousel-control" href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span><span class="sr-only">Previous</span> </a><a class="right carousel-control" href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span><span class="sr-only">Next</span> </a>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="padding: .5rem">
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 Panel Box START here -->
+                    <div class="hp-circle-sec quick-connect">
+                        <div class="container-fluid">
+                            <div class="circle-list">
+                                <ul class="quicksec">
+                                     <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                 <a href="http://mnregaweb4.nic.in/netnrega/View_NMMS_atten_date_new.aspx?fin_year=2022-2023&amp;Digest=HNrisV4bhHnb7Gve3mAKYQ" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="NMMS app View Attendance">
+                                                    <h3>View daily attendance (NMMS App)</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                     <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nregade.nic.in/netnrega/statepage.aspx?check=OMBDEO&amp;level=HomeOMBDEO" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Ombudsperson">
+                                                    <h3>Ombudsperson Login</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="http://mnregaweb4.nic.in/netnrega/FTO_DASHBOARD/Dashboard_Login.aspx" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Payment Dashboard">
+                                                    <h3>Payment Dashboard</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#ModalTransparency">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Sanction Orders">
+                                                    <h3>Sanction Orders</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#ModalQuickAccess">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Quick Access">
+                                                    <h3>Quick Access</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#ModalJanmanrega">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Janmanrega">
+                                                    <h3>Janmanrega</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    
+                                     <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://bhuvan-app2.nrsc.gov.in/mgnrega/mgnrega_phase2.php" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="GeoMGNREGA">
+                                                    <h3>Geomgnrega</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="zoom-in hidde visible animated zoomIn">
+                                        <div class="circle">
+                                            <div class="circle-cont">
+                                                <a href="https://nregade.nic.in/netnrega/statepage.aspx?check=Unnati" target="_blank">
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/dcmnt-dwnld-icon.png" alt="Project Unnati">
+                                                    <h3>Project Unnati</h3>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <!--<li class="zoom-in hidde visible animated zoomIn">
+                      <div class="circle">
+                        <div class="circle-cont"> <a href="https://nrega.nic.in/netnrega/SocialAuditFindings/SA_home.aspx" target="_blank"> <img src="themes/images/dcmnt-dwnld-icon.png" alt="Social_Audit">
+                          <h3>Social Audit</h3>
+                          </a> </div>
+                      </div>
+                    </li>
+                    <li class="zoom-in hidde visible animated zoomIn">
+                      <div class="circle success-story" style="background-color: deepskyblue; border: dotted 3px white;">
+                        <div class="circle-cont"> <a href="https://www.nrega.nic.in/netnrega/JalShakti/MGNrega_water_conservation.aspx" target="_blank"> <img src="../images/water-cons-icon.png" alt="Success Story">
+                          <h3>Water Conservation Stories</h3>
+                          </a> </div>
+                      </div>
+                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 6 Panel Box END here -->
+                    <div class="yellow-sec">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6 fade-in-left hidde visible animated fadeInLeft">
+                                    <div class="whats-new box">
+                                        <span class="iconHold"></span>
+                                        <h2>What’s New</h2>
+                                        <div class="cont-sec">
+                                            
+                                            <div class="vert-scroll-container">
+                                                
+                                                <ul class="vert-scroll">
+                                                    
+                                                      <li><a href="https://mnregaweb2.nic.in/Jaldoot_Video/V4_Jaldoot_App_FILM.mp4" target="_blank">Jaldoot App Release film -reg.</a> </li>
+                                                      <li>Jaldoot App Release brochure-reg.<a href="https://nrega.nic.in/Netnrega/Data/Final_JALDOOT_Mobile_app_Brochure_Hindi.pdf" target="_blank">[Hindi]</a><a href="https://nrega.nic.in/Netnrega/Data/Final_JALDOOT_Mobile_app_Brochure_English.pdf" target="_blank">[English]</a> </li>
+                                                    <li id="C_1"><a href="https://nrega.nic.in/netnrega/WriteReaddata/Circulars/2459Revised_adv_BRO_MGnrega.pdf" id="Cir_A1" target="_blank">Revised Joint Advisory on convergence of Mahatma Gandhi NREG Scheme and Border Roads Organization (RBO).</a></li>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <li><a href="https://nrega.nic.in/Netnrega/WriteReaddata/Circulars/Guidelines_Planning_for_Works_and_preparation_of_Labour_Budget_NREGA_for_FY_2021-22..pdf" target="_blank">Guidelines/ framework for Planning for Works and preparation of Labour Budget under MGNREGA for the FY 2021-22.</a></li>
+                                                    <li><a href="https://nrega.nic.in/Netnrega/Data/SoP_TimelypaymentMGNREGA.pdf" target="_blank">SOP for Streamlining Timely Payment MGNREGA</a> </li>
+                                                    <li><a href="http://nrega.nic.in/netnrega/SupremeCourtMatter.aspx" target="_blank">Supreme Court matter: Important communication on pending wage liability.</a> </li>
+                                                    <li><a href="http://nrega.nic.in/Netnrega/WriteReaddata/Circulars/VRP_TraningManual.pdf" target="_blank">Village Resource Persons Training Manual for Social Audit of MGNREGS.</a> </li>
+                                                    
+                                                    
+                                                </ul>
+                                                <div class="text-right"><a href="http://nrega.nic.in/netnrega/circular_new.aspx" target="_blank">More...</a> </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 fade-in-right hidde visible animated fadeInRight">
+                                    <div class="publication box">
+                                        <span class="iconHold"></span>
+                                      
+                                        <div class="cont-sec">
+                                            <ul>
+                                                <li><a href="https://rural.nic.in/sites/default/files/nrega/Library/Books/1_MGNREGA_Act.pdf" target="_blank"><span class="circle"><span>
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pagenote-icon.png" alt="MGNREGA Act"></span></span> </a>
+                                                    <h3><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" target="_blank">MGNREGA Act</a> </h3>
+                                                </li>
+                                               
+                                                <li><a href="https://nrega.nic.in/Netnrega/WriteReaddata/Circulars/2419Annual_Master_Circular_2020-21_English.pdf" target="_blank"><span class="circle"><span>
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pagenote-icon.png" alt="Annual Master Circular 2020-21"></span></span> </a>
+                                                    <h3><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#">Annual Master Circular 2020-21</a></h3>
+                                                </li>
+                                                <li><a href="http://nrega.nic.in/netnrega/circular_new.aspx" target="_blank"><span class="circle"><span>
+                                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pagenote-icon.png" alt="Circular"></span></span> </a>
+                                                    <h3><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" target="_blank">Circular </a></h3>
+                                                </li>
+                                                 <li> <a href="http://mnregaweb4.nic.in/netnrega/statepage.aspx?check=pgr&amp;lvl=citizen&amp;Digest=Ah5boauEAQAnYfahMVB4jw" target="_blank"> <span class="circle">
+                                                     <span><img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pagenote-icon.png" alt="Public Grievances"></span></span> </a>
+                                                     <h3><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#">Public Grievances</a></h3>
+                                                     
+                                                 </li>
+                                                 <li> <a href="http://nrega.nic.in/netnrega/library.aspx" target="_blank"> <span class="circle">
+                                                     <span><img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pagenote-icon.png" alt="Library"></span></span> </a>
+                                                     <h3><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#">Library</a></h3>
+                                                     
+                                                 </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h3 class="text-hide">Mann Ki Baat</h3>
+                <div class="text-center">
+                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/X0qP81f7lg3YqNFI" alt="mygov_1" id="_MLA2QtuKaTXEXQvC" onclick="javascript:window.open(&#39;https://cbpssubscriber.mygov.in/aff/MLA2QtuKaTXEXQvC&#39;)" style="cursor: pointer" onload="javascript:(function(){if(typeof _done == &#39;undefined&#39; || !_done){this.setAttribute(&#39;src&#39;, this.getAttribute(&#39;src&#39;)+&#39;?&#39;+Math.floor((Math.random() * 100) + 1)); _done=true;}}).call(this)">
+                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/100-days_small.jpg" id="100days" alt="100_days" onclick="javascript:window.open(&#39;https://nrega.nic.in/Netnrega/WriteReaddata/Circulars/100_Days_Achievements_MoRD.pdf&#39;)" style="min-height: 50px;">
+                </div>
+                <section class="carousel-wrapper">
+                    <div class="container">
+                        <h3 class="text-hide hide">Public Portal Logo</h3>
+                        <div id="flexCarousel" class="flexslider carousel">
+                            
+                        <div class="flex-viewport" style="overflow: hidden; position: relative;"><ul class="slides" style="width: 2400%; transition-duration: 0.6s; transform: translate3d(-1025px, 0px, 0px);">
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://amritmahotsav.nic.in/" onclick="return confirm(&#39;This link will take you to an external site https://amritmahotsav.nic.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/amrit-logo.png" alt="rashtragaan" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="http://digitalindia.gov.in/" onclick="return confirm(&#39;This link will take you to an external site http://digitalindia.gov.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/digital_india.png" alt="digitalindia" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="http://india.gov.in/" onclick="return confirm(&#39;This link will take you to an external site http://india.gov.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/india-gov.png" alt="india" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://services.india.gov.in/" onclick="return confirm(&#39;This link will take you to an external site https://services.india.gov.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/logo-ngsp_1.png" alt="servicesindia" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://rtionline.gov.in/" onclick="return confirm(&#39;This link will take you to an external site https://rtionline.gov.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/ri-logo.png" alt="rtionline" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://data.gov.in/" onclick="return confirm(&#39;This link will take you to an external site https://data.gov.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/data-gov.png" alt="data-gov" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://www.mygov.in/" onclick="return confirm(&#39;This link will take you to an external site https://www.mygov.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/mygov.png" alt="mygov" draggable="false"></a></li>
+                                 <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://pgportal.gov.in/" onclick="return confirm(&#39;This link will take you to an external site https://pgportal.gov.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/pg-portal.png" alt="mygov" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="http://egazette.nic.in/" onclick="return confirm(&#39;This link will take you to an external site http://egazette.nic.in.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/e-gazette.png" alt="egazette" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="http://goidirectory.nic.in/" onclick="return confirm(&#39;This link will take you to an external site http://goidirectory.nic.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/goidirectory.png" alt="goidirectory" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="https://indiacode.nic.in/" onclick="return confirm(&#39;This link will take you to an external site https://indiacode.nic.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/India_code.png" alt="indiacode" draggable="false"></a></li>
+                                <li style="width: 200px; float: left; display: block;"><a target="_blank" href="http://gandhi.gov.in/" onclick="return confirm(&#39;This link will take you to an external site http://gandhi.gov.in/.&#39;)" title="">
+                                    <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/Logo_resize.png" alt="gandhi" draggable="false"></a></li>
+                                
+                            </ul></div><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#">Next</a></li></ul></div>
+                    </div>
+                </section>
+                <!--/.carousel-wrapper-->
+                <footer id="footer" class="page-footer bg-gray-800">
+                    <div class="bg-gray-900 text-center py-1">
+                        <div class="container-fluid">
+                            <ul class="list-inline mb-0 bottom-quick small">
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalDisclaimer" class="text-light-secondary">Disclaimer</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalCopyrightPolicy" class="text-light-secondary">Copyright Policy</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalPrivacyPolicy" class="text-light-secondary">Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalHyperlinkingPolicy" class="text-light-secondary">Hyperlinking Policy</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalTermsandConditions" class="text-light-secondary">Terms &amp; Conditions</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModale-PaymentFeature" class="text-light-secondary">Accessibility Statement</a></li>
+                                
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalOftenUsedServices" class="text-light-secondary">Most Often Used Services</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalScreenReaderAccess" class="text-light-secondary">Help</a></li>
+                                <li class="list-inline-item"><a href="https://nrega.nic.in/Nregahome/MGNREGA_new/Nrega_home.aspx#" data-toggle="modal" data-target="#fluidModalContactUs" class="text-light-secondary">Contact Us</a></li>
+                                 <li class="list-inline-item"><a href="https://nrega.nic.in/Netnrega/feedback_New.aspx" target="_blank" class="text-light-secondary">Feedback</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                     <div class="container-fluid text-center">
+              <div class="row">
+                <div class="col-md-3 my-1"><a target="_blank" title="External site that opens in a new window" href="https://www.nic.in/" role="link"> <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/nic-logo.png" height="36" alt="NIC"></a></div>
+                <div class="col-md-6 my-1">
+                  <div style="font-size:80%; line-height:1.3;">
+                    <div>Website content is owned &amp; managed by the <a href="https://rural.nic.in/" target="_blank"><b>Ministry of Rural Development</b></a>, Government of India.</div>
+                    <div>Site is designed, developed, hosted and maintained by <a href="http://www.nic.in/" target="_blank"><b>National Informatics Centre (NIC)</b></a></div>
+                  </div>
+                </div>
+                <div class="col-md-3 my-1"> <img src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/valid-css2.png" alt="valid-CSS3" title="W3C CSS3 Validator"> </div>
+              </div></div>
+              <div class="text-center small text-muted" style="background-color: black">
+               Last Updated: <kbd>11th November 2022</kbd> </div>
+                </footer>
+                
+                <!-- [ Footer ] end -->
+                <!-- Full Screen Modal - ||Disclaimer|| -->
+                <!-- [ Footer ] end -->
+                <!-- Full Screen Modal - ||Disclaimer|| -->
+                <div class="modal fade" id="fluidModalDisclaimer" tabindex="-1" aria-labelledby="fluidModalDisclaimerTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalDisclaimerTitle">Disclaimer</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This website is brought to you by the Ministry of Rural Development (MoRD), Government of India.
+                    While surfing through this site you will come across directories and links to Government and Private Organizations. 
+                    The contents of these sites are not to be construed as a responsibility of or an endorsement by the Authority and are
+                    owned by the respective organizations which may be contacted for any further information or suggestion.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||fluidModal Copyright Policy || -->
+                <div class="modal fade" id="fluidModalCopyrightPolicy" tabindex="-1" aria-labelledby="fluidModalCopyrightPolicyTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalCopyrightPolicyTitle">Copyright Policy</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p class="">
+                                    The material of this website has to be reproduced accurately and not to be used in a derogatory manner or in a misleading context.
+                    Wherever the material is being published or issued to others, the source must be prominently acknowledged. 
+                    However, the permission to reproduce this material shall not extend to any material, which is identified as being copyright of a third party.
+                    Authorization to reproduce such material must be obtained from the departments/copyright holders concerned.
+                    Extracts of the information in the website may be reviewed, reproduced or translated for research or private study but not for sale or for
+                    use in conjunction with commercial purposes. Any use of information in the website should be accompanied by an acknowledgement of MoRD as the source,
+                    citing the uniform resource locator (URL) of the article/page. Reproduction or translation of substantial portions of the website,
+                    or any use other than for educational or other non-commercial purposes, requires explicit, prior authorization in writing.
+                    Applications and enquiries should be addressed/emailed to the Web Information Manager at nicdrd[at]nic[dot]in.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||Privacy Policy|| -->
+                <div class="modal fade" id="fluidModalPrivacyPolicy" tabindex="-1" aria-labelledby="fluidModalPrivacyPolicyTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalPrivacyPolicyTitle">Privacy Policy</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    MoRD website does not automatically capture any specific personal information from you, (like name, phone number or e-mail address), that allows us to identify you individually.
+                    This website records your visit and logs for statistical purposes. MoRD will not identify users or their browsing activities, except when a law enforcement agency may exercise a warrant to inspect the service provider's logs.
+                    If the MoRD website requests you to provide personal information, you will be informed for the particular purposes for which the information is gathered, and adequate security measures will be taken to protect your personal information. MoRD does not sell or share any personally identifiable information volunteered on the MoRD website to any third party (public/private). Any information provided to this website will be protected from loss, misuse, unauthorized access or disclosure, alteration, or destruction.
+                                </p>
+                                <h5>COOKIES</h5>
+                                <p>A cookie is a piece of software code that an Internet website sends to your browser when you access information in that site.</p>
+                                <h5>E-MAIL MANAGEMENT</h5>
+                                <p>Your e-mail address will only be recorded if you choose to send a message. It will only be used for the purpose for which you have provided it and will not be added to a mailing list. Your e-mail address will not be used for any other purpose and will not be disclosed without your consent.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||Hyperlinking Policy|| -->
+                <div class="modal fade" id="fluidModalHyperlinkingPolicy" tabindex="-1" aria-labelledby="fluidModalHyperlinkingPolicyTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalHyperlinkingPolicyTitle">Hyperlinking Policy</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    The visitor will find links to other websites/portals at many places in this website. MoRD is not responsible for the contents and reliability of the linked websites and does not necessarily endorse the views expressed in them. Mere presence of the link or its listing on this portal should not be assumed as endorsement of any kind. MoRD cannot guarantee that these links will work all the time and MoRD have no control over availability of linked pages.
+                    When you select a link to an outside website, you are leaving the MoRD website and are subject to the privacy and security policies of the owners/sponsors of the outside website. MoRD cannot authorize the use of copyrighted materials contained in linked websites. Users are advised to request such authorization from the owner of the linked website. MoRD does not guarantee that linked websites comply with Indian Government Web Guidelines.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||Terms and Conditions|| -->
+                <div class="modal fade" id="fluidModalTermsandConditions" tabindex="-1" aria-labelledby="fluidModalTermsandConditionsTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalTermsandConditionsTitle">Terms &amp; Conditions</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>
+                                    This website is designed, developed, hosted and maintained by National Informatics Centre, Govt. of India for the Ministry of Rural Development, Government of India.
+                    Though all efforts have been made to ensure the accuracy of the content on this Portal, the same should not be construed as a statement of law or used for any legal purposes. 
+                    Links to other websites that have been included on this Portal are provided for public convenience only. MoRD and NIC is not responsible for the contents or reliability of linked websites and does not necessarily endorse the view expressed within them. We cannot guarantee the availability of such linked pages at all times.
+                    These terms and conditions shall be governed by and construed in accordance with the Indian Laws. Any dispute arising under these terms and conditions shall be subject to the exclusive jurisdiction of the courts of India.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||Accessibility Statement|| -->
+                <div class="modal fade" id="fluidModale-PaymentFeature" tabindex="-1" aria-labelledby="fluidModale-PaymentFeatureTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModale-PaymentFeatureTitle">Accessibility Statement</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>We are committed to ensure that the Ministry of Rural Development website is accessible to all users irrespective of device in use, technology or ability. It has been built, with an aim, to provide maximum accessibility and usability to its visitors. As a result this website can be viewed from a variety of devices such as Desktop / Laptop Computers, Web-enabled mobile devices; etc.</p>
+                                <p>We have put in our best efforts to ensure that all information on this website is accessible easily. We also aim to be standards compliant and follow principles of usability and universal design, which should help all visitors of this website.</p>
+                                <p>If you have any problem or suggestion regarding the accessibility of this website, please contact us to enable us to respond in a helpful manner. Do let us know the nature of the problem along with your contact information.</p>
+        
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Height Modal Right - ||Most Often Used Services|| -->
+                <div class="modal fade right" id="fluidModalOftenUsedServices" tabindex="-1" aria-labelledby="fluidModalContactUsTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4">Most Often Used Services</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="text-justify">
+                                    <p>List of MGNREGA Most Often Used Services</p>
+                                    <div class="list-group">
+                                        <a href="http://mnregaweb4.nic.in/netnrega/all_lvl_details_dashboard_new.aspx?Fin_Year=2022-2023&amp;Digest=ftWywJ4W7YWkLDX82gF7Mw" class="list-group-item list-group-item-action" target="_blank">At a Glance</a>
+                                        <a href="http://mnregaweb4.nic.in/netnrega/MISreport4.aspx" class="list-group-item list-group-item-action" target="_blank">MIS Report</a>
+                                        <a href="http://mnregaweb4.nic.in/netnrega/homesearch.htm" class="list-group-item list-group-item-action" target="_blank">Search Job Card/ Work/ Musteroll/ Wagelist/ FTO</a>
+                                         <a href="http://nrega.nic.in/netnrega/statepage.aspx?Page=C&amp;Digest=GmpYzpnzFJIVhl6rY0MeSw" class="list-group-item list-group-item-action" target="_blank">Job Cards</a>
+                                         <a href="http://mnregaweb4.nic.in/netnrega/workers/wrkinfo.aspx" class="list-group-item list-group-item-action" target="_blank">Workers</a>
+                                        <a href="https://nrega.nic.in/netnrega/statepage.aspx?check=ml&amp;Digest=VybWnGOdBWpr6yAbzIt/pg" class="list-group-item list-group-item-action" target="_blank">Muster rolls</a>
+                                        <a href="https://services.india.gov.in/" class="list-group-item list-group-item-action" target="_blank">National Government Portal</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||AccessibilityStatement|| -->
+                
+                <!-- Full Screen Modal - ||Screen Reader Access|| -->
+                <div class="modal fade" id="fluidModalScreenReaderAccess" tabindex="-1" aria-labelledby="fluidModalScreenReaderAccessTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4" id="fluidModalScreenReaderAccessTitle">Help</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h2>Accessibility Help</h2>
+                                <p class="">Use the accessibility options provided by this Web site to control the screen display. These options allow increasing the text size and changing the contrast scheme for clear visibility and better readability.</p>
+                                <h2>Sitemap</h2>
+                                <p class="">User can visit Sitemap page to get an overall view of the contents of this site. You can also navigate around the site by clicking on the Sitemap link.</p>
+        
+                                <h2>Feedback</h2>
+                                <p>A section for registering the visitor’s experience, suggestions with respect to MGNREGA website.</p>
+                                <h2>What’s New:</h2>
+                                <p>This section is containing all updates about the circulars issued to States/Citizen with download facility</p>
+        
+                                <h2>Screen Reader Access</h2>
+                                <p class="">Ministry of Rural Development, Govt. of India website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments access the website using assistive technologies, such as screen readers. The information of the website is accessible with different screen readers.</p>
+                                <p>VARIOUS SCREEN READERS TO CHOOSE FROM:-</p>
+                                <div class="table-responsive">
+                                    <table class="table table-sm table-striped table-bordered small">
+                                        <thead>
+                                            <tr class="" style="background: #edf5f8;">
+                                                <th>S.No.</th>
+                                                <th>Screen Reader</th>
+                                                <th>Website</th>
+                                                <th>Free / Commercial</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1.</td>
+                                                <td>Screen Access For All (SAFA)</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://safa-reader.software.informer.com/download/" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://safa-reader.software.informer.com/download/</a></td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr class="">
+                                                <td>2.</td>
+                                                <td>Non Visual Desktop Access (NVDA)</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://www.nvda-project.org/" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://www.nvda-project.org/</a></td>
+                                                <td>Free</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>System Access To Go</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://www.satogo.com/" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://www.satogo.com/</a></td>
+                                                <td>Free</td>
+                                            </tr>
+        
+        
+                                            <tr>
+                                                <td>4.</td>
+                                                <td>Hal</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://www.yourdolphin.co.uk/productdetail.asp?id=5" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://www.yourdolphin.co.uk/productdetail.asp?id=5</a></td>
+                                                <td>Commercial</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5.</td>
+                                                <td>JAWS</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://www.freedomscientific.com/Products/Blindness/JAWS" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://www.freedomscientific.com/Products/Blindness/JAWS</a></td>
+                                                <td>Commercial</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6.</td>
+                                                <td>Supernova</td>
+                                                <td><i class="fa fa-external-link me-1"></i><a href="http://www.yourdolphin.co.uk/productdetail.asp?id=1" target="_blank" onclick="return confirm(&#39;External site that opens in a new window&#39;)">http://www.yourdolphin.co.uk/productdetail.asp?id=1</a></td>
+                                                <td>Commercial</td>
+                                            </tr>
+        
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Full Screen Modal - ||Contact Us|| -->
+                <div class="modal fade" id="fluidModalContactUs" tabindex="-1" aria-labelledby="fluidModalContactUsTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header bg-light-primary">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h2 class="modal-title h4" id="fluidModalContactUsTitle">Contact Us</h2>
+                            </div>
+                            <div class="modal-body">
+                                <h5>THE MAHATMA GANDHI NATIONAL RURAL EMPLOYMENT GUARANTEE ACT 2005 (MGNREGA)</h5>
+                                <p>
+                                    Ministry of Rural Development - Govt. of India<br>
+                                    Krishi Bhavan,<br>
+                                    Dr. Rajendra Prasad Road,<br>
+                                    New Delhi - 110001 
+                    INDIA
+                                </p>
+                                <h2>Contact Us</h2>
+                                <div class="list-group">
+                                    <a href="https://nrega.nic.in/Nregahome/Mord_official.aspx" class="list-group-item list-group-item-action" target="_blank">MoRD Officials</a>
+                                    <a href="https://nrega.nic.in/Nregahome/mis_incharge_contacts_report.aspx" class="list-group-item list-group-item-action" target="_blank">State MIS Officers</a>
+        
+                                </div>
+                                <h2>Social Media</h2>
+                                <ul class="list-group list-group-horizontal-md">
+                                    <li class="list-group-item"><a href="https://www.facebook.com/iecmgnrega/" onclick="return confirm(&#39;This link will take you to an external site https://www.facebook.com/iecmgnrega/.&#39;)" target="_blank" class="dropdown-item"><i class="fa fa-facebook"></i>Facebook</a></li>
+                                    <li class="list-group-item"><a href="http://bit.ly/mord_goi" onclick="return confirm(&#39;This link will take you to an external site http://bit.ly/mord_goi.&#39;)" target="_blank" class="dropdown-item"><i class="fa fa-twitter"></i>Twitter</a></li>
+                                    <li class="list-group-item"><a href="https://www.youtube.com/channel/UCIicGPL5tTD23FvCDFOhrOA?view_as=subscriber" onclick="return confirm(&#39;This link will take you to an external site https://www.youtube.com/channel/UCIicGPL5tTD23FvCDFOhrOA?view_as=subscriber.&#39;)" target="_blank" class="dropdown-item"><i class="fa fa-youtube"></i>YouTube</a></li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Full Screen Modal - ||Feedback|| -->
+                
+               
+                                <!--<a href="#" target="_BLANK" title="External site that opens in a new window" role="link">-->
+                              
+                                
+                                <!--</a>-->
+                            
+               
+                
+                  
+                   
+             
+                <!-- Modal Window - ||Transparency|| START -->
+                <div class="modal fade" id="ModalTransparency" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4">Sanction Orders</h5>
+                            </div>
+                            <div class="modal-body whats-new box">
+                                <div class="vert-scroll-container">
+                                    <ul class="vert-scroll">                            
+                                       <li>Sanction Order <a href="https://dashboard.rural.nic.in/MgnregaSancCatWise2223.aspx" target="_blank">2022-23 </a>  <a href="https://dashboard.rural.nic.in/MgnregaSancCatWise.aspx" target="_blank">  2021-22</a> </li>
+                                        <li>NeFMS Mother Sanctions <a href="https://dashboard.rural.nic.in/sancrelease/RepNregaMotherSanc2223.asp?dept_code=rd&amp;scheme_cod=26&amp;financial_year=2022-2023" target="_blank">2022-23 </a> <a href="https://dashboard.rural.nic.in/MgnregaMotherSancCatWise.aspx" target="_blank">2021-22</a></li>
+                                         <li><a href="https://mnregaweb4.nic.in/rms/RMS_LoginPage.aspx" target="_blank">Upload Sanction Orders</a></li>
+                                        <li><a href="http://mnregaweb4.nic.in/netnrega/Morelabour.aspx" target="_blank">Labour Budget</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Window - ||Transparency|| END -->
+                <!-- Modal Window - ||Quick Access|| START -->
+                <div class="modal fade" id="ModalQuickAccess" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4">Quick Access</h5>
+                            </div>
+                            <div class="modal-body whats-new box">
+                                <div class="vert-scroll-container">
+                                  
+                                    <ul class="vert-scroll">
+                                        <li><a href="https://nrega.nic.in/Nregahome/Homepanch_new.aspx" target="_blank">Panchayats GP/PS/ZP Login</a></li>
+                                        <li><a href="https://nrega.nic.in/Nregahome/homedpc_new.aspx" target="_blank">District/Block Admin.Login</a></li>
+                                         <li><a href="https://nrega.nic.in/Nregahome/Homeagency_new.aspx" target="_blank"> Other Impl.Agency Login </a></li>
+                                         <li><a href="https://nrega.nic.in/Netnrega/stdeHome.aspx?check=FTO" target="_blank">State level FTO Entry</a></li>
+                                        <li><a href="https://nrega.nic.in/Netnrega/stdeHome.aspx" target="_blank">State level Data Entry</a></li>
+                                        <li><a href="https://nrega.nic.in/Netnrega/stHome.aspx" target="_blank">State Reports</a></li>
+                                    </ul>
+                                   
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Window - ||Quick Access|| END -->
+                <!-- Modal Window - ||Janmanrega|| START -->
+                <div class="modal fade" id="ModalJanmanrega" data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                <h5 class="modal-title h4">Janmanrega</h5>
+                            </div>
+                            <div class="modal-body whats-new box">
+                                <div class="vert-scroll-container">
+                                    <ul class="vert-scroll">
+                                        <li><a href="http://nrega.nic.in/netnrega/Janmanrega.htm" target="_blank">Download Janmanrega - Citizen-centric Mobile Application (Beta Version)</a></li>
+                                        <li><a href="http://mnregaweb4.nic.in/netnrega/Feedbacknrega.aspx" target="_blank">Feedback on Janmanrega App</a></li>
+                                        <li><a href="http://mnregaweb4.nic.in/Netnrega/UserMasterReport.aspx" target="_blank">User Registration Status Report</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Window - ||Janmanrega|| END -->
+                <!-- Modal Window - ||Geomgnrega|| START -->
+               
+                <!-- Modal Window - ||Geomgnrega|| END -->
+            </form>   
 </body>
 </html>
 <script src="./JavaScript/index.js"></script>
+<script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/jquery.min.js.download"></script> 
+<script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/bootstrap.min.js.download"></script>
+    
+   
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/framework.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/jquery.flexslider.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/font-size.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/swithcer.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/paralaxbg.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/viewportchecker.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/jquery.newsTicker.js.download"></script>
+    <script src="./Mahatma Gandhi NREGA _ Ministry of Rural Development, Government Of India_files/site.js.download"></script>
