@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+ @media print {
+.container {
+	width:100% !important;
+}
+.header-container {
+	border:1px solid #000 !important;
+	width:98% !important;
+	padding:0;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000 !important;
+}
+body p {
+	line-height:22px !important;
+}
+.top-wrapper,  
+.nav-wrapper,  
+.footer-top-wrapper,  
+.footer-bottom-wrapper,  
+.header-right,  
+.banner-wrapper,  
+.carousel-wrapper {
+	display:none !important;
+}
+h1.logo {
+	padding-left:0px;
+}
+h1.logo a {
+	float:left;
+	margin-top:15px;
+}
+h1.logo:before {
+	content: url(../images/emblem-dark.png);
+	float:left;
+	margin-right:10px;
+}
+.body-container ul.list li {
+	position:relative;
+}
+.body-container ul.list li:before {
+	
+	margin-right:5px;
+	float:left;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+
+.megamenu-wraper{position:static;}
+
+
+}

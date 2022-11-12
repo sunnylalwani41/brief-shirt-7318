@@ -1,0 +1,153 @@
+
+jQuery(document).ready(function() {
+	jQuery('#flexSlider').flexslider({
+		animation: "slide",
+		controlNav: true,
+		pausePlay: false,
+	});
+	jQuery('#flexMarqueSlider').flexslider({
+		animation: "fade",
+		controlNav: false,
+		pausePlay: true,
+	});
+	jQuery('#flexSlider-sm').flexslider({
+		animation: "fade",
+		controlNav: false,
+		pausePlay: false,
+	});
+	// Carousel						
+	jQuery('#flexCarousel').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			itemWidth: 200,
+			itemMargin: 5,
+			minItems: 2,
+			maxItems: 6,
+			slideshow: 1,
+			move: 1,
+			controlNav: false,
+			start: function(slider){
+			  jQuery('body').removeClass('loading');
+			  if (slider.pagingCount === 1) slider.addClass('flex-centered');
+			}
+	});
+	jQuery('#flexCarouselTxt').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			direction: "vertical",
+			//itemWidth: 200,
+			itemMargin: 5,
+			minItems: 6,
+			maxItems: 6,
+			slideshow: 1,
+			move: 1,
+			controlNav: false,
+			start: function(slider){
+			  jQuery('body').removeClass('loading');
+			  if (slider.pagingCount === 1) slider.addClass('flex-centered');
+			}
+	});
+	$('.fade-in').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated fadeIn', // Class to add to the elements when they are visible
+	});
+	
+	$('.fade-in-left').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated fadeInLeft', // Class to add to the elements when they are visible
+	});
+	
+	$('.fade-in-right').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated fadeInRight', // Class to add to the elements when they are visible
+	});
+	
+	$('.fade-in-down').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated fadeInDown', // Class to add to the elements when they are visible
+	});
+	
+	$('.fade-in-up').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated fadeInUp', // Class to add to the elements when they are visible
+	});
+	
+	$('.zoom-in').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated zoomIn', // Class to add to the elements when they are visible
+	});
+	
+	$('.slide-in-down').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated slideInDown', // Class to add to the elements when they are visible
+	});
+	$('.slide-in-right').addClass("hidde").viewportChecker({
+		classToAdd: 'visible animated slideInRight', // Class to add to the elements when they are visible
+	});
+	
+	$('.toggl-nav-bar .fa-times').hide();
+	$('.toggl-nav-bar').click(function() {
+		$('#togglMenu').toggleClass('togglBar').slideToggle();
+		//$('#header-nav').slideUp();
+		$('.toggl-nav-bar .fa-bars').toggle();
+		$('.toggl-nav-bar .fa-times').toggle();
+		$('.toplinkBtn .fa-arrows-alt').show();
+		$('.toplinkBtn .fa-compress').hide();
+		//e.stopPropagation();
+	});
+	
+	/*jQuery(document).click(function(event) { 
+		if(!jQuery(event.target).closest('#togglMenu').length) {
+			if(jQuery('#togglMenu').is(":visible")) {
+				jQuery("#togglMenu").slideUp();
+				jQuery('.toggl-nav-bar .fa-bars').toggle();
+				jQuery('.toggl-nav-bar .fa-times').toggle();
+			}
+		}        
+	})*/
+	
+	$('.common-right li').hover(function() {
+		$('#togglMenu').slideUp();
+		$('.toggl-nav-bar .fa-bars').show();
+		$('.toggl-nav-bar .fa-times').hide();
+	});
+	
+	$('<span class="res-searchBtn"><i class="fa fa-search" aria-hidden="true"></i>').prependTo('.top-search-area');	
+	$('.res-searchBtn').click(function() {
+		$('.top-search-area .form-group').slideToggle();
+	});
+	
+	
+	$('<span class="toplinkBtn"><i class="fa fa-arrows-alt" aria-hidden="true"></i><i class="fa fa-compress" aria-hidden="true"></i>').insertBefore('.common-right');
+	$('.toplinkBtn .fa-compress').hide();
+	$('.toplinkBtn').click(function() {
+		$('#header-nav').slideToggle();
+		$('#togglMenu').slideUp();
+		$('.toplinkBtn .fa-arrows-alt').toggle();
+		$('.toplinkBtn .fa-compress').toggle();
+		$('.toggl-nav-bar .fa-bars').show();
+		$('.toggl-nav-bar .fa-times').hide();
+	});
+	
+	jQuery('body').append('<a href="javascript:void(0)" class="totop">Top</a>');
+	
+	jQuery('.totop').click(function(e) {      
+		jQuery("html, body").animate({ scrollTop: 0 }, "slow");
+    });
+	/*
+	$('.high-contrast.dark').click(function(){
+		$("#sw-logo").attr('src',"images/swach-bharat.png");
+		$("#sw-logo").attr('src',"images/swach-bharat-high-contrast.png");
+	  });*/
+	
+});
+jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop()>0)
+     {
+        jQuery('.totop').fadeIn();
+     }
+    else
+     {
+      jQuery('.totop').fadeOut();
+     }
+});
+
+$('.high-contrast.dark').click(function(){
+   $('#sw-logo').attr('src', 'assets/images/swach-bharat-high-contrast.png');
+});
+$('.high-contrast.light').click(function(){
+   $('#sw-logo').attr('src', 'assets/images/swach-bharat.png');
+});
